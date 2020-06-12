@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "334925411143",
+    "firebase_url": "https://chamados-46b6e.firebaseio.com",
+    "project_id": "chamados-46b6e",
+    "storage_bucket": "chamados-46b6e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334925411143:android:ea20e6f868826dba941262",
+        "android_client_info": {
+          "package_name": "com.rezende.chamados"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334925411143-0vukj2d07utr1nslmgamhgorjtkdalbp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rezende.chamados",
+            "certificate_hash": "cf0690399b09645c25462e8c02bace6d5fef9ae6"
+          }
+        },
+        {
+          "client_id": "334925411143-h9629neqgslvs6kp00ck89osq92kg46v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzC97GTCB1ciZ8KU8vHtfQ1kRhjwTXkbs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334925411143-h9629neqgslvs6kp00ck89osq92kg46v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

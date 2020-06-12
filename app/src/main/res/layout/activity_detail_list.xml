@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".view.DetailListActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#b11f0f"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/ic_arrow_back_white_18dp"
+        app:titleTextColor="#fff" />
+
+    <ImageView
+        android:id="@+id/imageView_detail"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_alignParentStart="true"
+        android:contentDescription="TODO"
+        app:srcCompat="@android:color/background_light" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/imageView_detail"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="19dp" />
+
+    <LinearLayout
+        android:id="@+id/linear_todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/imageView_detail"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_type_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Tipo Samu Amt" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_title_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/imageView_detail"
+                android:gravity="center"
+                android:text="Dale Dale"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/text_description_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/videoView"
+                android:text="DAAAAAAAAAAAAAAAAAALEEE" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/videoView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_status_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="29-05-2020 - 10:29:01 - andamento"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Thot urgências</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_login">login</string>
+    <string name="title_activity_register_internal">Dados pessoais</string>
+    <string name="title_activity_camera">camera</string>
+    <string name="title_activity_information_urgency">Urgencia</string>
+    <string name="title_activity_list">Chamados</string>
+    <string name="facebook_app_id">233663884439732</string>
+    <string name="fb_login_protocol_scheme">fb233663884439732</string>
+</resources>

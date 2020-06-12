@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.InformationUrgencyActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#b11f0f"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/ic_arrow_back_white_18dp"
+        app:titleTextColor="#fff" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_abstract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:text="Em poucas palavras: qual o motivo da urgência?"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edit_abstract"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="15dp" />
+
+            <TextView
+                android:id="@+id/text_motivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:text="Por favor, descreva com detalhes a situação:"
+                android:textColor="@color/black" />
+
+
+            <EditText
+                android:id="@+id/edit_description"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginHorizontal="15dp" />
+
+            <TextView
+                android:id="@+id/text_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Escolha quem irá lhe auxiliar: "
+                android:textColor="@color/black" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <Switch
+                    android:id="@+id/switch_firefighter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bombeiros" />
+
+                <Switch
+                    android:id="@+id/switch_samu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SAMU" />
+
+                <Switch
+                    android:id="@+id/switch_pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Policia Militar" />
+
+                <Switch
+                    android:id="@+id/switch_amt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="AMT" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_advanced"
+                android:layout_width="241dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"
+                android:background="#3F51B5"
+                android:text="Avançar"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b11f0f"
+    android:theme="@style/AppTheme"
+    tools:context=".view.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="267dp"
+                android:layout_height="225dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@mipmap/location_worth_name_foreground"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+        <!-- Snippet from "Add text fields" section goes here. -->
+        <TextView
+            android:id="@+id/text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Usuário"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:drawableLeft="@drawable/ic_perm_identity_white_18dp"
+            android:inputType="textEmailAddress"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/text_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Senha"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:drawableLeft="@drawable/ic_vpn_key_white_18dp"
+            android:inputType="textPassword"
+            android:textColor="#fff"
+            android:theme="@style/AppTheme" />
+        <!-- Snippet from "Add buttons" section goes here. -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_login_internal"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#888282"
+                android:text="Entrar"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+
+                />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/btn_login_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:layout_gravity="center_horizontal" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btn_login_google"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+            </com.google.android.gms.common.SignInButton>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_insert_internal"
+            android:layout_width="260dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:background="#b11f0f"
+            android:text="Cadastrar-se agora"
+            android:textAllCaps="false"
+            android:textColor="#ffff" />
+
+    </LinearLayout>
+</ScrollView>
